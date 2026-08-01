@@ -1,0 +1,54 @@
+.not-found {
+
+    width: 100%;
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+.not-found h1 {
+
+    font-size: 7rem;
+
+    color: #E63946;
+
+    margin-bottom: .5rem;
+
+}
+
+.not-found h2 {
+
+    margin-bottom: .5rem;
+
+}
+
+.not-found p {
+
+    color: #94A3B8;
+
+    margin-bottom: 2rem;
+
+}
+
+.back-button {
+
+    background: #E63946;
+
+    color: white;
+
+    padding: .9rem 1.5rem;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+}

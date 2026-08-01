@@ -1,0 +1,46 @@
+@import "../StaffModal/StaffModal.css";
+
+.form-group select {
+    padding: .9rem 1rem;
+
+    background: #111827;
+
+    border: 1px solid #374151;
+    border-radius: 10px;
+
+    color: white;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        transform .15s ease;
+}
+
+.form-group select:focus {
+    outline: none;
+
+    border-color: #ef4444;
+
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, .15);
+
+    transform: translateY(-1px);
+}
+
+.form-group select option {
+    background: #111827;
+    color: white;
+}
+
+.plan-period-hint {
+    margin: .65rem 0 0;
+
+    color: #9ca3af;
+
+    font-size: .875rem;
+    line-height: 1.45;
+}
+
+.plan-period-hint strong {
+    color: #e5e7eb;
+    font-weight: 600;
+}

@@ -1,0 +1,223 @@
+.sidebar {
+
+    width: 260px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #1E293B;
+
+    border-right: 1px solid #334155;
+
+    transition: width .25s ease;
+
+}
+
+/* ===========================
+   Sidebar Top
+=========================== */
+
+.sidebar-top {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+
+    border-bottom: 1px solid #334155;
+
+}
+
+.sidebar-toggle {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    align-self: flex-start;
+
+    border: none;
+    outline: none;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #CBD5E1;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+    margin-bottom: 1rem;
+
+}
+
+.sidebar-toggle:hover {
+
+    background: #334155;
+
+    color: white;
+
+}
+
+.sidebar-logo {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebar-logo img {
+
+    width: 150px;
+    height: auto;
+
+    object-fit: contain;
+
+    transition: .25s;
+
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.sidebar-nav {
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: .5rem;
+
+    padding: 1rem;
+
+}
+
+.sidebar-nav a {
+
+    display: flex;
+    align-items: center;
+
+    gap: .75rem;
+
+    padding: .9rem 1rem;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    color: #CBD5E1;
+
+    transition: .2s;
+
+}
+
+.sidebar-nav a:hover {
+
+    background: #334155;
+
+    color: white;
+
+}
+
+.sidebar-nav a.active {
+
+    background: #E63946;
+
+    color: white;
+
+}
+
+.nav-icon {
+
+    min-width: 22px;
+
+    font-size: 1.1rem;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.sidebar-footer {
+
+    padding: 1.5rem;
+
+    border-top: 1px solid #334155;
+
+    text-align: center;
+
+    color: #94A3B8;
+
+}
+
+.sidebar-footer p {
+
+    margin: 0;
+
+    font-weight: 600;
+
+}
+
+.sidebar-footer span {
+
+    font-size: .85rem;
+
+}
+
+/* ===========================
+   Collapsed Sidebar
+=========================== */
+
+.sidebar.collapsed {
+
+    width: 80px;
+
+}
+
+.sidebar.collapsed .sidebar-top {
+
+    align-items: center;
+
+}
+
+.sidebar.collapsed .sidebar-toggle {
+
+    align-self: center;
+
+    margin-bottom: .75rem;
+
+}
+
+.sidebar.collapsed .sidebar-logo img {
+
+    width: 45px;
+
+}
+
+.sidebar.collapsed .nav-text,
+.sidebar.collapsed .sidebar-footer {
+
+    display: none;
+
+}
+
+.sidebar.collapsed .sidebar-nav a {
+
+    justify-content: center;
+
+    padding: 1rem 0;
+
+}

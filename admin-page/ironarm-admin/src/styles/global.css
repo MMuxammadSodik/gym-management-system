@@ -1,0 +1,28 @@
+html,
+body,
+#root{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+
+    background:var(--background);
+    color:var(--text);
+
+    font-family:
+        Inter,
+        system-ui,
+        sans-serif;
+
+    line-height:1.5;
+}
+.auth-layout,
+.dashboard-layout{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

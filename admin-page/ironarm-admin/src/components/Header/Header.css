@@ -1,0 +1,41 @@
+.header {
+
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 2rem;
+
+    background: #243244;
+
+    border-bottom: 1px solid #334155;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+
+}.header {
+
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 2rem;
+
+    background: #243244;
+
+    border-bottom: 1px solid #334155;
+
+}
+
+.header-title {
+
+    color: white;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+}

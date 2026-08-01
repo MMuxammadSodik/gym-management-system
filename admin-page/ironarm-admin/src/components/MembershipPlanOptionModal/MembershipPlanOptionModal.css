@@ -1,0 +1,321 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(8px);
+
+    z-index: 9999;
+
+    animation: fadeIn .25s ease;
+}
+
+.membership-modal {
+    width: 100%;
+    max-width: 560px;
+    max-height: 90vh;
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,.45);
+
+    animation: modalPop .25s ease;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 28px;
+
+    border-bottom: 1px solid #334155;
+}
+
+.modal-header h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.close-btn {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #94a3b8;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    transition: color .2s;
+}
+
+.close-btn:hover {
+    color: white;
+}
+
+.membership-modal form {
+    padding: 28px;
+    overflow-y: auto;
+    max-height: calc(90vh - 120px);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+
+    color: #e2e8f0;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.form-group input {
+    height: 50px;
+
+    padding: 0 16px;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 15px;
+
+    transition: .25s;
+}
+
+.form-group input:disabled {
+    background: #162033;
+    color: #cbd5e1;
+    cursor: not-allowed;
+}
+
+.form-group input:focus {
+    outline: none;
+
+    border-color: #ef4444;
+
+    box-shadow: 0 0 0 4px rgba(239,68,68,.15);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.radio-item:hover {
+    border-color: #ef4444;
+}
+
+.radio-item input {
+    width: 18px;
+    height: 18px;
+
+    accent-color: #ef4444;
+}
+
+.radio-item span {
+    color: white;
+    font-weight: 500;
+}
+
+.summary-card {
+    margin-top: 28px;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 14px;
+
+    padding: 20px;
+}
+
+.summary-card h3 {
+    margin: 0 0 18px;
+
+    color: white;
+
+    font-size: 18px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #233248;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-row span {
+    color: #94a3b8;
+}
+
+.summary-row strong {
+    color: white;
+}
+
+.summary-row.total strong {
+    color: #22c55e;
+    font-size: 18px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 14px;
+
+    margin-top: 28px;
+}
+
+.cancel-btn,
+.save-btn {
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 12px 22px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.cancel-btn {
+    background: #334155;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #475569;
+}
+
+.save-btn {
+    background: #ef4444;
+    color: white;
+}
+
+.save-btn:hover:not(:disabled) {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+.save-btn:disabled {
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes modalPop {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px) scale(.96);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
+
+@media (max-width:700px) {
+
+    .membership-modal {
+        width: calc(100% - 24px);
+        margin: 12px;
+    }
+
+    .membership-modal form {
+        padding: 20px;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+    }
+
+    .cancel-btn,
+    .save-btn {
+        width: 100%;
+    }
+
+}

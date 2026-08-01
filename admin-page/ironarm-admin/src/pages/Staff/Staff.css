@@ -1,0 +1,186 @@
+.staff-page {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.staff-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.staff-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.staff-header p {
+    margin-top: .35rem;
+    color: #9ca3af;
+}
+
+.staff-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .8rem 1rem;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    background: #111827;
+}
+
+.search-box svg {
+    color: #9ca3af;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: .95rem;
+}
+
+.primary-btn {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .8rem 1.25rem;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.staff-table-wrapper {
+    overflow: hidden;
+    border-radius: 14px;
+    background: #1b1d31;
+    border: 1px solid #2d3748;
+}
+
+.staff-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.staff-table thead {
+    background: #22243a;
+}
+
+.staff-table th {
+    text-align: left;
+    padding: 1rem;
+    color: #d1d5db;
+    font-size: .9rem;
+}
+
+.staff-table td {
+    padding: 1rem;
+    border-top: 1px solid #2d3748;
+}
+
+.staff-table tbody tr:hover {
+    background: rgba(255,255,255,.02);
+}
+
+.actions-column {
+    width: 150px;
+}
+
+.actions {
+    display: flex;
+    gap: .5rem;
+}
+
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background: #2b2d45;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.icon-btn:hover {
+    background: #3b3d5b;
+}
+
+.icon-btn.delete:hover {
+    background: #dc2626;
+}
+
+.role-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    padding: .35rem .8rem;
+    border-radius: 999px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #60a5fa;
+    background: rgba(96,165,250,.15);
+}
+
+.empty-staff {
+    text-align: center;
+    padding: 2rem !important;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.staff-loading,
+.staff-error {
+    padding: 3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.staff-error {
+    color: #ef4444;
+}
+
+@media (max-width: 900px) {
+    .staff-header,
+    .staff-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .staff-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .staff-table {
+        min-width: 800px;
+    }
+}

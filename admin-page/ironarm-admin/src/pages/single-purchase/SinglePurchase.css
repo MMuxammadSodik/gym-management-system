@@ -1,0 +1,212 @@
+.single-purchase-page {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.single-purchase-loading,
+.single-purchase-error {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.single-purchase-error {
+    color: #dc2626;
+}
+
+.single-purchase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.single-purchase-header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.single-purchase-header p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.single-purchase-header .primary-btn,
+.single-purchase-header .single-purchase-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.single-purchase-header .primary-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.single-purchase-header .primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.single-purchase-header .single-purchase-btn {
+    background: #10b981;
+    color: white;
+}
+
+.single-purchase-header .single-purchase-btn:hover {
+    background: #059669;
+}
+
+.single-purchase-price {
+    background: #1b1d31;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #f8fafc;
+    border: 1px solid #2d3748;
+}
+
+.single-purchase-toolbar {
+    margin-bottom: 1.5rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #111827;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    max-width: 400px;
+}
+
+.search-box svg {
+    color: #9ca3af;
+    margin-right: 0.5rem;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.95rem;
+    background: transparent;
+    color: white;
+}
+
+.single-purchase-table-wrapper {
+    background: #1b1d31;
+    border-radius: 12px;
+    border: 1px solid #2d3748;
+    overflow: hidden;
+}
+
+.single-purchase-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.single-purchase-table thead {
+    background: #22243a;
+    border-bottom: 1px solid #2d3748;
+}
+
+.single-purchase-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #d1d5db;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.single-purchase-table th.actions-column {
+    text-align: right;
+}
+
+.single-purchase-table tbody tr {
+    border-bottom: 1px solid #2d3748;
+    transition: background 0.15s;
+}
+
+.single-purchase-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.single-purchase-table tbody tr.clickable-row {
+    cursor: pointer;
+}
+
+.single-purchase-table tbody tr.clickable-row:hover {
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.single-purchase-table td {
+    padding: 1rem;
+    font-size: 0.95rem;
+    color: #f8fafc;
+}
+
+.plan-badge {
+    display: inline-block;
+    background: rgba(52, 211, 153, .15);
+    color: #34d399;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background: #2b2d45;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: white;
+}
+
+.icon-btn:hover {
+    background: #3b3d5b;
+}
+
+.icon-btn.delete:hover {
+    background: #dc2626;
+}
+
+.empty-members {
+    text-align: center;
+    padding: 3rem;
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
