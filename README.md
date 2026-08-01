@@ -125,7 +125,3 @@ The frontend will be available at `http://localhost:5173`
 - Default single purchase price: 50,000
 - JWT expiration: 24 hours
 - Server port: 8080
-
-## License
-
-This project is licensed under the MIT License.
